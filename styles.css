@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu-item {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #343a40;
+        padding: 10px;
+    }
+    
+    .menu-item {
+        text-align: center;
+    }
+}
