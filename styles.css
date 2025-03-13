@@ -1,24 +1,48 @@
+
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px; 
 }
 
-.menu-item {
-    background-color: #ddd;
-    padding: 20px;
-    border-radius: 5px;
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.navbar-dark .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
+/* Navbar Mobil Görünümü */
 @media (max-width: 768px) {
     .navbar-collapse {
         background-color: #343a40;
         padding: 10px;
     }
-    
-    .menu-item {
-        text-align: center;
-    }
+}
+
+
+.container.text-center {
+    margin-top: 20px;
+}
+
+
+.menu-item {
+    background-color: #ddd;
+    padding: 40px;
+    border-radius: 10px;
+    min-height: 600px; 
+    margin-bottom: 50px;
+}
+
+
+.menu-item h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.menu-item p {
+    font-size: 18px;
+    line-height: 1.6;
 }
