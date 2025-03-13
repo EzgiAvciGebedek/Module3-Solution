@@ -29,20 +29,50 @@ body {
 /* Menü Bölümleri */
 .menu-item {
     background-color: #ddd;
-    padding: 40px;
+    padding: 50px;
     border-radius: 10px;
-    min-height: 600px; /* Sayfa kaydırmayı zorunlu hale getirmek için */
-    margin-bottom: 50px; /* Bölümler arasında boşluk bırak */
+    min-height: 120vh; /* Bölümleri daha uzun yaparak kaydırmayı zorunlu hale getir */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* İçeriği dikeyde ortala */
+    align-items: center; /* İçeriği yatayda ortala */
+    text-align: center;
 }
 
 /* Menü Başlıkları */
 .menu-item h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 /* Menü İçeriği */
 .menu-item p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+/* Renkli Arka Planlar */
+#chicken {
+    background-color: #ffebcd; /* Açık bej */
+}
+
+#beef {
+    background-color: #f4a460; /* Açık kahverengi */
+}
+
+#sushi {
+    background-color: #ffb6c1; /* Açık pembe */
+}
+
+/* Mobil Görünüm İçin Küçük Düzenlemeler */
+@media (max-width: 768px) {
+    .menu-item {
+        padding: 30px;
+        min-height: 100vh; /* Mobilde de uzun görünüm sağla */
+    }
+    
+    .menu-item p {
+        font-size: 18px;
+    }
 }
